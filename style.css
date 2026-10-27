@@ -1,0 +1,96 @@
+:root {
+  color-scheme: light dark;
+  --bg: #faf8f5;
+  --fg: #1a1a1a;
+  --muted: #555;
+  --link: #0b57d0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --fg: #e8e6e3;
+    --muted: #a0a0a0;
+    --link: #8ab4f8;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem 4rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.65;
+}
+
+main {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.35rem;
+}
+
+.tagline {
+  color: var(--muted);
+  margin: 0 0 2rem;
+}
+
+.essay-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.essay-list li {
+  margin: 0 0 0.85rem;
+}
+
+.essay-list a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.essay-list time {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--link);
+}
+
+article header {
+  margin-bottom: 1.75rem;
+}
+
+article h1 {
+  margin-bottom: 0.4rem;
+}
+
+article .date {
+  color: var(--muted);
+  margin: 0;
+}
+
+article p {
+  margin: 0 0 1.1rem;
+}
